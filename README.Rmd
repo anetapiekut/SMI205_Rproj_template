@@ -1,8 +1,11 @@
 ---
 title: "README for SMI205 Rproj template"
 author: "Aneta Piekut"
-date: "2023-02-26"
-output: github_document
+date: "2023-02-27"
+output:
+  github_document:
+    toc: true
+    toc_depth: 2
 
     
 ---
@@ -47,7 +50,7 @@ You can use this template to create a new script for a paper without a replicati
 
 # 2. `renv` package
 
-The Template.Rproj was created with `renv` package. The `renv` package helps you to create a reproducible environment for your R project. Read more here: https://rstudio.github.io/renv/.
+The Template.Rproj was created without using `renv` package, yet, you should consider using it. The `renv` package helps you to create a reproducible environment for your R project. Read more here: https://rstudio.github.io/renv/.
 
 It saves information about R and loaded packages. So if you later (after any R updates or changes in the packages) or other people open your Rproj, it will recreate the same environment, and will not use the central libraries installed on a computer ([Joseph 2022](https://medium.com/@adrian.joseph/renv-make-r-environment-reproducible-414d88c683aa )). 
 

@@ -1,7 +1,25 @@
 README for SMI205 Rproj template
 ================
 Aneta Piekut
-2023-02-26
+2023-02-27
+
+- <a href="#1-a-rproj-template" id="toc-1-a-rproj-template">1. A Rproj
+  template</a>
+  - <a href="#11-workflow---a-template"
+    id="toc-11-workflow---a-template">1.1. Workflow - a template</a>
+  - <a href="#12-r-script---templates" id="toc-12-r-script---templates">1.2.
+    R script - templates</a>
+- <a href="#2-renv-package" id="toc-2-renv-package">2. <code>renv</code>
+  package</a>
+  - <a href="#21-how-to-work-with-renv-package"
+    id="toc-21-how-to-work-with-renv-package">2.1. How to work with
+    <code>renv</code> package</a>
+  - <a href="#22-trouble-shooting-with-renv-package"
+    id="toc-22-trouble-shooting-with-renv-package">2.2. Trouble shooting
+    with <code>renv</code> package</a>
+- <a href="#3-before-submiting-your-work"
+  id="toc-3-before-submiting-your-work">3. Before submiting your work</a>
+- <a href="#4-my-enviroment" id="toc-4-my-enviroment">4. My enviroment</a>
 
 # 1. A Rproj template
 
@@ -58,9 +76,10 @@ for your chosen paper.
 
 # 2. `renv` package
 
-The Template.Rproj was created with `renv` package. The `renv` package
-helps you to create a reproducible environment for your R project. Read
-more here: <https://rstudio.github.io/renv/>.
+The Template.Rproj was created without using `renv` package, yet, you
+should consider using it. The `renv` package helps you to create a
+reproducible environment for your R project. Read more here:
+<https://rstudio.github.io/renv/>.
 
 It saves information about R and loaded packages. So if you later (after
 any R updates or changes in the packages) or other people open your
