@@ -14,6 +14,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+> Click on the button __'< >Code'__ and select __'Download Zip'__ to download all files in this project onto your computer.
+
 # 1. A Rproj template
 
 This is a R project template for Assessment 1. While checking reproducibility of one selected model from a paper published in a 'good quality' journal of social sciences, you still need to organise your work in a way, so other researchers, including your instructors, can easily understand your work. 
@@ -83,10 +85,11 @@ Transparency checklist:
 
 Finally, do not forget about a few technical jobs:
 
-+ Remove any unused templates before submitting your work from the RPoj folder.
-+ Make sure you save information about your specifications in your README file (see below).
++ Remove from the RPoj folder any unused templates before submitting your work.
++ Make sure you save information about your workspace specifications in your README file (see my below).
 + Anonymise your work by using Student ID instead of your name.
-+ Save your project on a university Google Drive, create a sharable link to the the folder (Restricted - University of Sheffield - 'Anyone in this group with the link can view'), and copy into Assessment 1 Reproducibility Check form (final page).
+
+> Save your project on a university Google Drive, create a shareable link to the the folder (Share - Restricted - University of Sheffield - 'Anyone in this group with the link can view'), and copy this link into Assessment 1 Reproducibility Check form (box on the final page).
 
 # 4. My enviroment
 

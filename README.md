@@ -21,6 +21,9 @@ Aneta Piekut
   id="toc-3-before-submiting-your-work">3. Before submiting your work</a>
 - <a href="#4-my-enviroment" id="toc-4-my-enviroment">4. My enviroment</a>
 
+> Click on the button **‘\< \>Code’** and select **‘Download Zip’** to
+> download all files in this project onto your computer.
+
 # 1. A Rproj template
 
 This is a R project template for Assessment 1. While checking
@@ -125,15 +128,16 @@ Transparency checklist:
 
 Finally, do not forget about a few technical jobs:
 
-- Remove any unused templates before submitting your work from the RPoj
-  folder.
-- Make sure you save information about your specifications in your
-  README file (see below).
+- Remove from the RPoj folder any unused templates before submitting
+  your work.
+- Make sure you save information about your workspace specifications in
+  your README file (see my below).
 - Anonymise your work by using Student ID instead of your name.
-- Save your project on a university Google Drive, create a sharable link
-  to the the folder (Restricted - University of Sheffield - ‘Anyone in
-  this group with the link can view’), and copy into Assessment 1
-  Reproducibility Check form (final page).
+
+> Save your project on a university Google Drive, create a shareable
+> link to the the folder (Share - Restricted - University of Sheffield -
+> ‘Anyone in this group with the link can view’), and copy this link
+> into Assessment 1 Reproducibility Check form (box on the final page).
 
 # 4. My enviroment
 
