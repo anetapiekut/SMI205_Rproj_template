@@ -1,0 +1,99 @@
+---
+title: "README for SMI205 Rproj template"
+author: "Aneta Piekut"
+date: "2023-02-26"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    theme: cerulean
+    highlight: tango
+    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. A Rproj template
+
+This is a R project template for Assessment 1. While checking reproducibility of one selected model from a paper published in a 'good quality' journal of social sciences, you still need to organise your work in a way, so other researchers, including your instructors, can easily understand your work. 
+
+This is done by using a robust workflow and preparing a transparent documentation for all tasks.
+
+## 1.1. Workflow - a template
+
+Note, in the R project folder, there are a few folders for different kinds of files:
+
+ + Data
+ + Scripts
+ + Outputs
+ + Reports
+ 
+Feel free to remove and add more folders, including creating another layer of folders in each of them. The way your workspace is organised should be aligned with the project needs.
+
+Project TIER Protocol 4.0 (https://www.projecttier.org/tier-protocol/protocol-4-0/) offers an excellent guide for what to include and how to organise reproduction documentation for a project based on quantiative methods.
+
+## 1.2. R script - templates
+
+This project also contains three templates of R script which are organised in a robust manner and include most commonly used list of libraries and functions. 
+
++ R script for data cleaning and subsetting data to create your analytical sample.
++ R script for main data analysis.
++ R script for data visualisation.
+
+As any template, they are here to help you, but can be further improved and its structure revised for your work. 
+
+You can use this template to create a new script for a paper without a replication package, or improve pieces of code in a R script available for your chosen paper.
+
+> Tip: when working with a R script available for a paper, do not edit it, but create a new R script. So ideally, you want to have an original script in your folder, as well as a brand new R Script containing your work. 
+
+
+# 2. `renv` package
+
+The Template.Rproj was created with `renv` package. The `renv` package helps you to create a reproducible environment for your R project. Read more here: https://rstudio.github.io/renv/.
+
+It saves information about R and loaded packages. So if you later (after any R updates or changes in the packages) or other people open your Rproj, it will recreate the same environment, and will not use the central libraries installed on a computer ([Joseph 2022](https://medium.com/@adrian.joseph/renv-make-r-environment-reproducible-414d88c683aa )). 
+
+
+## 2.1. How to work with `renv` package
+
+It is likely you will need to install new packages and would like to change the saved local libraries. There are three important commands in the package to do so:
+
++ Call `renv::init()` to initialise a new project-local environment with a private R library.
++ Call `renv::snapshot()` to save the state of the project library to the lockfile (called renv.lock).
++ Call `renv::restore()` to recall the packages and version the last time you called `renv::snapshot()`.
+
+They are called automatically when you work in RProj and initiate `renv` at the start.
+
+
+## 2.2. Trouble shooting with `renv` package
+
+Here is a useful guide by Joseph A. (2022). renv: make R environment reproducible. URL: https://medium.com/@adrian.joseph/renv-make-r-environment-reproducible-414d88c683aa (accessed 09/02/2023).
+
+# 3. Before submiting your work
+
+Transparency checklist:
+
++ Are all files organised and saved in relevant folders?
++ Are all files, variables and R objects named and organised in a way, so their role is clear?
++ Have you updated / created a README file introducing your project?
++ Is a replication package or any other files provided by the authors properly referenced in your work?
++ Is your project portable? Are your directory paths relative?
++ Have you tested whether your project runs on a different device?
+
+Finally, do not forget about a few technical jobs:
+
++ Remove any unused templates before submitting your work from the RPoj folder.
++ Make sure you save information about your specifications in your README file (see below).
++ Anonymise your work by using Student ID instead of your name.
++ Save your project on a university Google Drive, create a sharable link to the the folder (Restricted - University of Sheffield - 'Anyone in this group with the link can view'), and copy into Assessment 1 Reproducibility Check form (final page).
+
+# 4. My enviroment
+
+Below you can find information about versions of R and specific packages used to create this project. 
+
+```{r envir}
+sessionInfo()
+```
+
