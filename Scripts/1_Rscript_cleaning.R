@@ -45,12 +45,12 @@ library("tidyverse")
 ESS_w8_data <- readRDS("Data/RDS_file_name.RDS")
 
 # Opening data in SPSS format *.sav
-library("foreign")
-ESS_w8_data = read.spss("Data/SPSS_file_name.sav", to.data.frame=TRUE)
+library("haven")
+ESS_w8_data = read_spss("Data/SPSS_file_name.sav", to.data.frame=TRUE)
 
 # Opening data in Stata format *.dta
-library("foreign")
-ESS_w8_data2 = read.dta("Data/Stata_file_name.dta")
+library("haven")
+ESS_w8_data2 = read_dta("Data/Stata_file_name.dta")
 
 # Opening data in csv format (check the options: header & separator type)
 library("readr")
@@ -93,8 +93,13 @@ Data4$new_var=rowMeans(Datasetname[,c("var1", "var2", "var3", "var4", "var5", "v
 row.has.na <- apply(Datasetname, 1, function(x){any(is.na(x))})
 sum(row.has.na)
 
-# This code would save another dataset, deleting all cases with some missigness (NAs for your variables)
+# This code would save another dataset, deleting all cases with some missigness 
+# (NAs for your variables)
 ESS_w8_subset_with_indicators_v1 <- Datasetname[!row.has.na,]
+
+# This is another way of saving new dataset with observations without NAs
+ESS_w8_subset_with_indicators_v2 <- ESS_w8_subset_with_indicators_v1 %>% 
+  drop_na() 
 
 # Check the number of columns and rows in the new dataframe
 df.info()
@@ -110,11 +115,11 @@ saveRDS(ESS_w8_subset_with_indicators_v1, file = "Data/ESS_w8_cleaned_v1_2802202
 write.csv(ESS_w8_subset_with_indicators_v1, "Data/ESS_w8_cleaned_v1_28022023.csv")
 
 # Saving edited dataset as SPSS format (*sav)
-library(haven)
+library("haven")
 write_sav(ESS_w8_subset_with_indicators_v1, "Data/ESS_w8_cleaned_v1_28022023.sav")
 
 # Saving edited dataset as Stata format (*dta)
-library(haven)
+library("haven")
 write_dta(ESS_w8_subset_with_indicators_v1, "Data/ESS_w8_cleaned_v1_28022023.dta")
 
 # End of script ------------------------------------------------------

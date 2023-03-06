@@ -9,6 +9,8 @@ Aneta Piekut
     id="toc-11-workflow---a-template">1.1. Workflow - a template</a>
   - <a href="#12-r-script---templates" id="toc-12-r-script---templates">1.2.
     R script - templates</a>
+  - <a href="#13-readme-file---a-template"
+    id="toc-13-readme-file---a-template">1.3. READme file - a template</a>
 - <a href="#2-renv-package" id="toc-2-renv-package">2. <code>renv</code>
   package</a>
   - <a href="#21-how-to-work-with-renv-package"
@@ -30,7 +32,7 @@ This is a R project template for Assessment 1. While checking
 reproducibility of one selected model from a paper published in a ‘good
 quality’ journal of social sciences, you still need to organise your
 work in a way, so other researchers, including your instructors, can
-easily understand your work.
+easily understand and replicate your work.
 
 This is done by using a robust workflow and preparing a transparent
 documentation for all tasks.
@@ -62,7 +64,7 @@ libraries and functions.
 
 - R script for data cleaning and subsetting data to create your
   analytical sample.
-- R script for main data analysis.
+- R script for the main data analysis.
 - R script for data visualisation.
 
 As any template, they are here to help you, but can be further improved
@@ -74,8 +76,23 @@ for your chosen paper.
 
 > Tip: when working with a R script available for a paper, do not edit
 > it, but create a new R script. So ideally, you want to have an
-> original script in your folder, as well as a brand new R Script
-> containing your work.
+> original script intact, as well as a brand new R script for your exact
+> replication work. You can save original and edited scripts in
+> different subfolders.
+
+## 1.3. READme file - a template
+
+We also created a template READme file, which you need to update to
+describe your replication project - it is called ‘README_template’.
+
+This is a RMarkdown format \*.Rmd, so to save it as a HTML file you need
+to use the button ‘Knit’ in the upper panel. Steps:
+
+1)  open your R project (so all is saved in the linked project folder),
+2)  open the Rmd template file,
+3)  save it as a new Rmd file for your project (so rename),
+4)  edit it to add your project description,
+5)  knit/save into a Html page that is easily readable.
 
 # 2. `renv` package
 
@@ -86,8 +103,8 @@ reproducible environment for your R project. Read more here:
 
 It saves information about R and loaded packages. So if you later (after
 any R updates or changes in the packages) or other people open your
-Rproj, it will recreate the same environment, and will not use the
-central libraries installed on a computer ([Joseph
+Rproj, it will install the same libraries, and will not use the central
+libraries installed on a computer ([Joseph
 2022](https://medium.com/@adrian.joseph/renv-make-r-environment-reproducible-414d88c683aa)).
 
 ## 2.1. How to work with `renv` package
@@ -120,7 +137,7 @@ Transparency checklist:
 - Are all files organised and saved in relevant folders?
 - Are all files, variables and R objects named and organised in a way,
   so their role is clear?
-- Have you updated / created a README file introducing your project?
+- Have you created a READme file introducing your project?
 - Is a replication package or any other files provided by the authors
   properly referenced in your work?
 - Is your project portable? Are your directory paths relative?
@@ -131,7 +148,7 @@ Finally, do not forget about a few technical jobs:
 - Remove from the RPoj folder any unused templates before submitting
   your work.
 - Make sure you save information about your workspace specifications in
-  your README file (see my below).
+  your READme file (see my below).
 - Anonymise your work by using Student ID instead of your name.
 
 > Save your project on a university Google Drive, create a shareable

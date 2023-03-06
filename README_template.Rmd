@@ -1,0 +1,51 @@
+---
+title: "README for reproducibility check of XXXXXX (XXXX)"
+author: "Student ID number"
+date: "date"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+
+    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+> This is a temaplte READme file for Assessment 1 - edit it according to below guidelines. It is based on Project TIER Protocol 4.0 (https://www.projecttier.org/tier-protocol/protocol-4-0/).
+
+# 1. About this project
+
+Describe what research you are replicating:
+
+- reference to the paper your project is based on;
+- claim you are focusing on and running direct replication;
+- which display item (table, figure + page) and specification (e.g. model/column) your project reproduces.
+
+# 2. Project workflow and documentation
+
+Provide an outline of the hierarchy of folders and subfolders which are in your project folder.
+
+List all files stored in each folder and subfolder.
+
+# 3. Instructions for reproducing the results
+
+Provide step-by-step instructions for using the documentation in your project folder to reproduce the results of your exact replication. For example:
+
+- to open Rproj file first;
+- if there is more than one R script, what is the order of running them;
+- how to get original data;
+- whether your Rproj was created with/without the `renv` package.
+
+The instructions must be detailed and precise to make it possible for an interested user to reproduce your work without contacting you.
+
+# 4. My enviroment
+
+Provide information about versions of R and specific packages used to create your project. You can do it using `sessionInfo()` function.
+
+```{r envir}
+sessionInfo()
+```
+
