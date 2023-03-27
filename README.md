@@ -151,10 +151,8 @@ Finally, do not forget about a few technical jobs:
   your READme file (see my below).
 - Anonymise your work by using Student ID instead of your name.
 
-> Save your project on a university Google Drive, create a shareable
-> link to the the folder (Share - Restricted - University of Sheffield -
-> ‘Anyone in this group with the link can view’), and copy this link
-> into Assessment 1 Reproducibility Check form (box on the final page).
+> After compressing, submit this project folder in the second assessment
+> slot.
 
 # 4. My enviroment
 
